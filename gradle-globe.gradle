@@ -8,5 +8,5 @@ buildscript {
     }
 }
 
-if (!project.plugins.findPlugin('org.springframework.boot.gradle.plugin.SpringBootPlugin'))
-    project.apply('org.springframework.boot.gradle.plugin.SpringBootPlugin')
+if (!project.plugins.findPlugin(org.springframework.boot.gradle.plugin.SpringBootPlugin))
+    project.apply(org.springframework.boot.gradle.plugin.SpringBootPlugin)
