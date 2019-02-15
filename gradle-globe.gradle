@@ -8,5 +8,10 @@ buildscript {
     }
 }
 
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
 if (!project.plugins.findPlugin(org.springframework.boot.gradle.plugin.SpringBootPlugin))
     project.apply(plugin: org.springframework.boot.gradle.plugin.SpringBootPlugin)
