@@ -1,0 +1,13 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.5.19.RELEASE"
+    }
+}
+
+if (!project.plugins.findPlugin('org.springframework.boot.gradle.plugin.SpringBootPlugin')) {
+    project.apply('org.springframework.boot.gradle.plugin.SpringBootPlugin')
+}
