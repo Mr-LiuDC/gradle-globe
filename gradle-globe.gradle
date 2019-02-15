@@ -15,4 +15,6 @@ repositories {
 
 if (!project.plugins.findPlugin(org.springframework.boot.gradle.plugin.SpringBootPlugin))
     project.apply(plugin: org.springframework.boot.gradle.plugin.SpringBootPlugin)
-    
+
+if (!project.plugins.findPlugin(io.spring.gradle.dependencymanagement.DependencyManagementPlugin))
+    project.apply(plugin: io.spring.gradle.dependencymanagement.DependencyManagementPlugin)
